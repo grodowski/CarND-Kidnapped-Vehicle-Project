@@ -57,7 +57,7 @@ void ParticleFilter::prediction(double dt, double std_pos[], double v, double dt
   normal_distribution<double> dist_theta(0, std_pos[2]);
   
   for (int i = 0; i < particles.size(); i++) {
-    auto p = particles[i];
+    Particle p = particles[i];
     if (dtheta == 0) {
       p.x += v * cos(p.theta) * dt;
       p.y += v * sin(p.theta) * dt;
@@ -88,14 +88,11 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
   for (int i = 0; i < particles.size(); i++) {
     auto p = particles[i];
   
-    // reset weight, sense_x, sense_y and associations
+    // reset weight
     p.weight = 1.0;
-    p.sense_x.clear();
-    p.sense_y.clear();
-    p.associations.clear();
-    p.sense_x.reserve(observations.size());
-    p.sense_y.reserve(observations.size());
-    p.associations.reserve(observations.size());
+    vector<double> sense_x;
+    vector<double> sense_y;
+    vector<int> associations;
     
     for (auto obs : observations) {
       double obs_map_x = obs.x * cos(p.theta) - obs.y * sin(p.theta) + p.x;
@@ -121,9 +118,9 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
       if (min_dist < 0) {
         continue;
       }
-      p.sense_x.push_back(obs_map_x);
-      p.sense_y.push_back(obs_map_y);
-      p.associations.push_back(best_landmark.id_i);
+      sense_x.push_back(obs_map_x);
+      sense_y.push_back(obs_map_y);
+      associations.push_back(best_landmark.id_i);
       
       // compute observation partial probability for the selected landmark
       float sigma_x = std_landmark[0];
@@ -132,6 +129,9 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
       float exponent_y = pow(obs_map_y - best_landmark.y_f, 2) / 2 * sigma_y * sigma_y;
       p.weight *= exp(-(exponent_x + exponent_y)) / 2 * M_PI * sigma_x * sigma_y;
     }
+    p.sense_x = sense_x;
+    p.sense_y = sense_y;
+    p.associations = associations;
     particles[i] = p;
     weights[i] = p.weight;
   }
