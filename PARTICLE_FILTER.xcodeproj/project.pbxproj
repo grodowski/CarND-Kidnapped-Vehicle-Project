@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		0376B5DFBD764CA59CA379FC /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 860144EB88B94B7D97AB4D07 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 4BE49B57E70444D78F8F38A3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				A6D9705E23DD4998A34A486D /* CMake Rules */,
+				35D314B2A55F414E81E9AA42 /* CMake Rules */,
 			);
 			dependencies = (
-				2856A19443034620AD357506 /* PBXTargetDependency */,
-				581A5AD695204DD7B3182D3D /* PBXTargetDependency */,
+				96D605F8E22D4BA482662B04 /* PBXTargetDependency */,
+				680CE61A79274AC289C5E0AD /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		28555F4481944A90B5CDE9F3 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A71F7E000196464BB2D6148F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = CA572038539C48A394F5F9F2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				BFC492BB950D4CDC965B9AB7 /* CMake Rules */,
+				98BDB3EB4EE3410E88B2E458 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -34,61 +34,26 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6C84572AF9264B4DAC998A4A /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0E7295C6F0F144B980F063C1 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */; };
-		937D982C81E24195ACE1391F /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 2531DA8D96E9497696E82035 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/main.cpp */; };
-		D7EEC30481404343AD8C587F /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp */ = {isa = PBXBuildFile; fileRef = D8E4487351764B79BCA7F743 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp */; };
+		5181CDF3E73E47A08737DE1F /* particle_filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30643B3A1AC48DA8201AD4D /* particle_filter.cpp */; };
+		C2087416D40E42C5A5CA5A9B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29D0D53FD2574ADC9E571D82 /* main.cpp */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		6083CF1C88F54DE1B2B0A57B /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		7AA551250C9749639AC02C8A /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		8180C97426DC4DD2B3F5CF57 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		97B06F2A49A148038D78E380 = {
-			isa = PBXBuildStyle;
-		};
-		DEC73A62F0AF430DAB90A858 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
-		A88AADC9521246B591C6C32C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F07DBCDA40B4A9EADD12208 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28555F4481944A90B5CDE9F3;
-			remoteInfo = ZERO_CHECK;
-		};
-		B4A4A03EB4904FBCA02D2991 /* PBXContainerItemProxy */ = {
+		470D3AD4B89A4971BB0C7186 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F07DBCDA40B4A9EADD12208 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1F0D8798FAAD47E686338BD8;
 			remoteInfo = particle_filter;
 		};
-		C6313B04D19042DCB90B125A /* PBXContainerItemProxy */ = {
+		A0D736F8F9654AFBAAD1C37E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F07DBCDA40B4A9EADD12208 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28555F4481944A90B5CDE9F3;
+			remoteInfo = ZERO_CHECK;
+		};
+		C092B23AE8674B5AADD29EF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F07DBCDA40B4A9EADD12208 /* Project object */;
 			proxyType = 1;
@@ -98,93 +63,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E7295C6F0F144B980F063C1 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		2531DA8D96E9497696E82035 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		306E059DADE24FC3A6E511D1 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		65B4FE4762634AA1A5BC25C8 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		C1DE8A89841046F299F3C590 /* particle_filter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = particle_filter; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8E4487351764B79BCA7F743 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = particle_filter.cpp; path = src/particle_filter.cpp; sourceTree = SOURCE_ROOT; };
+		047E1E6E18B5414287F0330B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		29D0D53FD2574ADC9E571D82 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		3DA70EA81F1FD0BC0065384D /* particle_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle_filter.h; path = src/particle_filter.h; sourceTree = "<group>"; };
+		3DA70EA91F1FD0BC0065384D /* helper_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helper_functions.h; path = src/helper_functions.h; sourceTree = "<group>"; };
+		3DA70EAA1F1FD0BC0065384D /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = src/map.h; sourceTree = "<group>"; };
+		CA345467116A4D6FA314990D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D3D4054D715C44D7803B9CBA /* particle_filter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = particle_filter; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2FEF1B026422785FF3C9D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F30643B3A1AC48DA8201AD4D /* particle_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = particle_filter.cpp; path = src/particle_filter.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		14E8A935E24841269A8FB565 /* Source Files */ = {
+		06D40AD5193F4E79B267DED2 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				2531DA8D96E9497696E82035 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/main.cpp */,
-				D8E4487351764B79BCA7F743 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp */,
+				86C014A971BA4921837391FD /* CMake Rules */,
+				CA345467116A4D6FA314990D /* CMakeLists.txt */,
 			);
-			name = "Source Files";
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		272AFD12272C44F8A3CF1514 /* particle_filter */ = {
+		24E5C1A1FFAA4ADD9417B83E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14E8A935E24841269A8FB565 /* Source Files */,
-				0E7295C6F0F144B980F063C1 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */,
+				D3D4054D715C44D7803B9CBA /* particle_filter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31D1D96D839647A2A436D073 /* particle_filter */ = {
+			isa = PBXGroup;
+			children = (
+				E9E81A954739411A94329D8D /* Source Files */,
+				047E1E6E18B5414287F0330B /* CMakeLists.txt */,
 			);
 			name = particle_filter;
 			sourceTree = "<group>";
 		};
-		351C977040F54DE98FAA29C8 /* CMake Rules */ = {
+		38EF09C8A68C47D6A4ECD4D4 = {
+			isa = PBXGroup;
+			children = (
+				BCE37036DECC4EBF9E452C92 /* Sources */,
+				D1C4653E559C45E498DE1354 /* Resources */,
+				24E5C1A1FFAA4ADD9417B83E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86C014A971BA4921837391FD /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		38FB09EAD2474FEE8D0FB60B /* ZERO_CHECK */ = {
+		BCE37036DECC4EBF9E452C92 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				351C977040F54DE98FAA29C8 /* CMake Rules */,
-				306E059DADE24FC3A6E511D1 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
-		654909E62E33455E952977E0 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				F48A5940FCA14810B5F81C6A /* CMake Rules */,
-				65B4FE4762634AA1A5BC25C8 /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		87145E8306534E30B414E20B /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				272AFD12272C44F8A3CF1514 /* particle_filter */,
-				654909E62E33455E952977E0 /* ALL_BUILD */,
-				38FB09EAD2474FEE8D0FB60B /* ZERO_CHECK */,
+				31D1D96D839647A2A436D073 /* particle_filter */,
+				06D40AD5193F4E79B267DED2 /* ALL_BUILD */,
+				C69FE6BE71414921AAB7F003 /* ZERO_CHECK */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		A505EF63B3314410B42D1435 /* Resources */ = {
+		C69FE6BE71414921AAB7F003 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				F331518546024A41882D64C3 /* CMake Rules */,
+				E7B2FEF1B026422785FF3C9D /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		D1C4653E559C45E498DE1354 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A66EA24BC6DF409385D6A697 = {
+		E9E81A954739411A94329D8D /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				87145E8306534E30B414E20B /* Sources */,
-				A505EF63B3314410B42D1435 /* Resources */,
-				D88EBD9074B14A3C961BFC4E /* Products */,
+				3DA70EA81F1FD0BC0065384D /* particle_filter.h */,
+				3DA70EA91F1FD0BC0065384D /* helper_functions.h */,
+				3DA70EAA1F1FD0BC0065384D /* map.h */,
+				29D0D53FD2574ADC9E571D82 /* main.cpp */,
+				F30643B3A1AC48DA8201AD4D /* particle_filter.cpp */,
 			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		D88EBD9074B14A3C961BFC4E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C1DE8A89841046F299F3C590 /* particle_filter */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F48A5940FCA14810B5F81C6A /* CMake Rules */ = {
+		F331518546024A41882D64C3 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -196,18 +167,18 @@
 /* Begin PBXNativeTarget section */
 		1F0D8798FAAD47E686338BD8 /* particle_filter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49BFED90AA2F4E20B40CF5FB /* Build configuration list for PBXNativeTarget "particle_filter" */;
+			buildConfigurationList = 8A580020936D4357A7295AC3 /* Build configuration list for PBXNativeTarget "particle_filter" */;
 			buildPhases = (
-				A83751A4DB564928AD0F34A5 /* Sources */,
+				E8C3B5FEDFE542FCA2BF237D /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FB7BEF69A61544C2B1F6FA63 /* PBXTargetDependency */,
+				A44C6D1EB07C41BBABFCEEDD /* PBXTargetDependency */,
 			);
 			name = particle_filter;
 			productName = particle_filter;
-			productReference = C1DE8A89841046F299F3C590 /* particle_filter */;
+			productReference = D3D4054D715C44D7803B9CBA /* particle_filter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -219,19 +190,15 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0830;
 			};
-			buildConfigurationList = BE8EA1277E644D6F90C75E1B /* Build configuration list for PBXProject "PARTICLE_FILTER" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				6083CF1C88F54DE1B2B0A57B /* Debug */,
-				7AA551250C9749639AC02C8A /* Release */,
-				DEC73A62F0AF430DAB90A858 /* MinSizeRel */,
-				8180C97426DC4DD2B3F5CF57 /* RelWithDebInfo */,
-			);
+			buildConfigurationList = 0B71841DFE4F46F9AE19051A /* Build configuration list for PBXProject "PARTICLE_FILTER" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
-			mainGroup = A66EA24BC6DF409385D6A697;
-			projectDirPath = .;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38EF09C8A68C47D6A4ECD4D4;
+			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0376B5DFBD764CA59CA379FC /* ALL_BUILD */,
@@ -242,22 +209,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A3B3EA13C29D47159D389AC2 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		A6D9705E23DD4998A34A486D /* CMake Rules */ = {
+		35D314B2A55F414E81E9AA42 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,7 +220,7 @@ exit 0";
 			shellScript = "make -C /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project -f /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		BFC492BB950D4CDC965B9AB7 /* CMake Rules */ = {
+		98BDB3EB4EE3410E88B2E458 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,90 +231,52 @@ exit 0";
 			shellScript = "make -C /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project -f /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		C15EE81FD31342BCA6A2FF56 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A83751A4DB564928AD0F34A5 /* Sources */ = {
+		E8C3B5FEDFE542FCA2BF237D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937D982C81E24195ACE1391F /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/main.cpp */,
-				D7EEC30481404343AD8C587F /* /Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/src/particle_filter.cpp */,
+				C2087416D40E42C5A5CA5A9B /* main.cpp in Sources */,
+				5181CDF3E73E47A08737DE1F /* particle_filter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2856A19443034620AD357506 /* PBXTargetDependency */ = {
+		680CE61A79274AC289C5E0AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28555F4481944A90B5CDE9F3 /* ZERO_CHECK */;
-			targetProxy = C6313B04D19042DCB90B125A /* PBXContainerItemProxy */;
+			targetProxy = C092B23AE8674B5AADD29EF6 /* PBXContainerItemProxy */;
 		};
-		581A5AD695204DD7B3182D3D /* PBXTargetDependency */ = {
+		96D605F8E22D4BA482662B04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F0D8798FAAD47E686338BD8 /* particle_filter */;
-			targetProxy = B4A4A03EB4904FBCA02D2991 /* PBXContainerItemProxy */;
+			targetProxy = 470D3AD4B89A4971BB0C7186 /* PBXContainerItemProxy */;
 		};
-		FB7BEF69A61544C2B1F6FA63 /* PBXTargetDependency */ = {
+		A44C6D1EB07C41BBABFCEEDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28555F4481944A90B5CDE9F3 /* ZERO_CHECK */;
-			targetProxy = A88AADC9521246B591C6C32C /* PBXContainerItemProxy */;
+			targetProxy = A0D736F8F9654AFBAAD1C37E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00A2D7517284416AABD9E8F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
-				OTHER_CPLUSPLUSFLAGS = "     -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lz -lssl -luv -luWS";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = particle_filter;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		06A4DC9FF97E4BF9896C3513 /* Release */ = {
+		020C3AFB161B48D1BB660C4A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -370,146 +284,54 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		2E2F377C8DDF4008B4E7CA54 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
-		3797E9F6BB7547B6B7C1D12C /* Debug */ = {
+		1FE826C0B2A94F5AABED8042 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
-		3926AD101DD7434EB1CBDD41 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		5A792D931C5B401CB142F740 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		6CAF7766B5E94F7980AC8593 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		7A566E2A676A446BA0B20871 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		7B564EA079B74ED8896C88CC /* Debug */ = {
+		262B7A849F924CF1B369D7D0 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		9C2CD84C03BE444BB6F03BCD /* MinSizeRel */ = {
+		3A55C31E8174458EA7F5FC0E /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -518,51 +340,119 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lz -lssl -luv -luWS";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/Cellar/libuv/1.11.0/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = particle_filter;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
-		B1DE187411A142158CE4CD6D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
-			};
-			name = RelWithDebInfo;
-		};
-		BAC5FEADBFB2453E824D2B46 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
-				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
-			};
-			name = MinSizeRel;
-		};
-		D4EF184CACA34BEC85A5F891 /* RelWithDebInfo */ = {
+		3B66A09CADEA4139A0265E0A /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		4748D9E7646E43C582912575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		4EB6921C7C58485AAB11A3A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -570,20 +460,111 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
-		FDDBD94C90E741D5AE0C759D /* Release */ = {
+		6FF2662C2CC1411995FD6BAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
 			};
+			name = Debug;
+		};
+		7A86CD02114A465993A736BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
 			name = Release;
 		};
-		FDDF455899A04321977E6249 /* RelWithDebInfo */ = {
+		7AA7F74C59CE472BAA745F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/Cellar/libuv/1.11.0/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "     -std=c++11";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = particle_filter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		833169F6E7454EB39DFC76A7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
+			};
+			name = RelWithDebInfo;
+		};
+		84DE382BCCEB4F3C99C94706 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -592,24 +573,116 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lz -lssl -luv -luWS";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/Cellar/libuv/1.11.0/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = particle_filter;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
-		FF51C6394CDB43EEBDF971D2 /* Release */ = {
+		9F93304AADF14E5CB4ED9A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project/build";
+			};
+			name = Release;
+		};
+		ACFF0C388A7A422299BA829A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D12FB3F7DD47445D9C666B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F14A0456AF8B441995E95325 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -618,66 +691,91 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,/usr/local/opt/openssl/include);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1.11.0/lib";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++11";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lz -lssl -luv -luWS";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+					"/usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/libuv/1.11.0/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/Cellar/libuv/1.11.0/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-lz",
+					"-lssl",
+					"-luv",
+					"-luWS",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = particle_filter;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/jan/ml_carnd_t2/CarND-Kidnapped-Vehicle-Project";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49BFED90AA2F4E20B40CF5FB /* Build configuration list for PBXNativeTarget "particle_filter" */ = {
+		0B71841DFE4F46F9AE19051A /* Build configuration list for PBXProject "PARTICLE_FILTER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00A2D7517284416AABD9E8F4 /* Debug */,
-				FF51C6394CDB43EEBDF971D2 /* Release */,
-				9C2CD84C03BE444BB6F03BCD /* MinSizeRel */,
-				FDDF455899A04321977E6249 /* RelWithDebInfo */,
+				6FF2662C2CC1411995FD6BAA /* Debug */,
+				9F93304AADF14E5CB4ED9A53 /* Release */,
+				262B7A849F924CF1B369D7D0 /* MinSizeRel */,
+				833169F6E7454EB39DFC76A7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		860144EB88B94B7D97AB4D07 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		4BE49B57E70444D78F8F38A3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A792D931C5B401CB142F740 /* Debug */,
-				6CAF7766B5E94F7980AC8593 /* Release */,
-				2E2F377C8DDF4008B4E7CA54 /* MinSizeRel */,
-				3926AD101DD7434EB1CBDD41 /* RelWithDebInfo */,
+				1FE826C0B2A94F5AABED8042 /* Debug */,
+				4748D9E7646E43C582912575 /* Release */,
+				ACFF0C388A7A422299BA829A /* MinSizeRel */,
+				3B66A09CADEA4139A0265E0A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A71F7E000196464BB2D6148F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		8A580020936D4357A7295AC3 /* Build configuration list for PBXNativeTarget "particle_filter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3797E9F6BB7547B6B7C1D12C /* Debug */,
-				06A4DC9FF97E4BF9896C3513 /* Release */,
-				7A566E2A676A446BA0B20871 /* MinSizeRel */,
-				D4EF184CACA34BEC85A5F891 /* RelWithDebInfo */,
+				7AA7F74C59CE472BAA745F50 /* Debug */,
+				F14A0456AF8B441995E95325 /* Release */,
+				3A55C31E8174458EA7F5FC0E /* MinSizeRel */,
+				84DE382BCCEB4F3C99C94706 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BE8EA1277E644D6F90C75E1B /* Build configuration list for PBXProject "PARTICLE_FILTER" */ = {
+		CA572038539C48A394F5F9F2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B564EA079B74ED8896C88CC /* Debug */,
-				FDDBD94C90E741D5AE0C759D /* Release */,
-				BAC5FEADBFB2453E824D2B46 /* MinSizeRel */,
-				B1DE187411A142158CE4CD6D /* RelWithDebInfo */,
+				D12FB3F7DD47445D9C666B7B /* Debug */,
+				7A86CD02114A465993A736BA /* Release */,
+				020C3AFB161B48D1BB660C4A /* MinSizeRel */,
+				4EB6921C7C58485AAB11A3A9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
