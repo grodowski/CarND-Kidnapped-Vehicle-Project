@@ -19,7 +19,7 @@
 
 using namespace std;
 
-default_random_engine gen;
+static default_random_engine gen;
 
 void ParticleFilter::init(double x, double y, double theta, double std[]) {
 	// TODO: Set the number of particles. Initialize all particles to first position (based on estimates of 
@@ -27,7 +27,6 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
 	// Add random Gaussian noise to each particle.
 	// NOTE: Consult particle_filter.h for more information about this method (and others in this file).
   num_particles = 50;
-  particles.resize(num_particles);
   weights.resize(num_particles, 1.0f);
 
   normal_distribution<double> dist_x(0, std[0]);
@@ -125,13 +124,19 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
       // compute observation partial probability for the selected landmark
       float sigma_x = std_landmark[0];
       float sigma_y = std_landmark[1];
-      float exponent_x = pow(obs_map_x - best_landmark.x_f, 2) / 2 * sigma_x * sigma_x;
-      float exponent_y = pow(obs_map_y - best_landmark.y_f, 2) / 2 * sigma_y * sigma_y;
-      p.weight *= exp(-(exponent_x + exponent_y)) / 2 * M_PI * sigma_x * sigma_y;
+      float exponent_x = pow(obs_map_x - best_landmark.x_f, 2) / (2 * sigma_x * sigma_x);
+      float exponent_y = pow(obs_map_y - best_landmark.y_f, 2) / (2 * sigma_y * sigma_y);
+      p.weight *= exp(-(exponent_x + exponent_y)) / (2 * M_PI * sigma_x * sigma_y);
     }
-    p.sense_x = sense_x;
-    p.sense_y = sense_y;
-    p.associations = associations;
+    
+    if (associations.size() == 0) {
+      // no landmark selected - let the particle die quickly
+      p.weight = 0.0;
+    } else {
+      p.sense_x = sense_x;
+      p.sense_y = sense_y;
+      p.associations = associations;
+    }
     particles[i] = p;
     weights[i] = p.weight;
   }
